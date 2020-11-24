@@ -1,0 +1,40 @@
+CREATE TABLE MondayLotto(
+	"Draw number" INT,
+	"Draw date" DATE,
+	"Winning Number 1" INT,
+	"Winning Number 2" INT,
+	"Winning Number 3" INT,
+	"Winning Number 4" INT,
+	"Winning Number 5" INT,
+	"Winning Number 6" INT,
+	"Supplementary Number 1" INT,
+	"Supplementary Number 2" INT,
+	"Division 1 winners" INT,
+	"Division 1 winners in WA" INT,
+	"Division 1 prize pool" FLOAT,
+	"Division 1 amount" FLOAT,
+	"Division 2 winners" INT,
+	"Division 2 winners in WA" INT,
+	"Division 2 prize pool" FLOAT,
+	"Division 2 amount" FLOAT,
+	"Division 3 winners" INT,
+	"Division 3 winners in WA" INT,
+	"Division 3 prize pool" FLOAT,
+	"Division 3 amount" FLOAT,
+	"Division 4 winners" INT,
+	"Division 4 winners in WA" INT,
+	"Division 4 prize pool" FLOAT,
+	"Division 4 amount" FLOAT,
+	"Division 5 winners" INT,
+	"Division 5 winners in WA" INT,
+	"Division 5 prize pool" FLOAT,
+	"Division 5 amount" FLOAT,
+	"Division 6 winners" INT,
+	"Division 6 winners in WA" INT,
+	"Division 6 prize pool" FLOAT,
+	"Division 6 amount" FLOAT
+);
+
+COPY MondayLotto FROM 'Project Lotto\Data\MondayLotto.csv' DELIMITER ',' CSV HEADER;
+
+SELECT * FROM MondayLotto;
